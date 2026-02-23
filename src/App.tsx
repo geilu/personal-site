@@ -1,9 +1,52 @@
+import Navbar from "./components/navbar.tsx";
+import ProjectCard from "./components/projectCard.tsx";
+import SkillCard from "./components/skillCard.tsx";
+
 function App() {
 
   return (
     <>
-        <h1 className="text-3xl font-bold text-white">hello!</h1>
-        <p>:3</p>
+        <Navbar />
+        <div className="flex flex-col items-center">
+            {/* about section */}
+            <div className="p-[200px] pb-[300px] pt-[300px] flex flex-row gap-[20px] justify-between w-[100%]">
+                <div className="max-w-[550px] min-w-0">
+                    <h1 className="text-6xl font-bold mb-[20px] text-[#9C3EE4]">About</h1>
+                    <p className="text-white text-3xl text-wrap break-all">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    <button className="mt-[30px] p-[10px] bg-[#9C3EE4]">link</button>
+                </div>
+                <div className="p-[100px]">
+                    <h1 className="text-white">image here</h1>
+                </div>
+            </div>
+
+            <hr className="bg-[#9C3EE4] h-[4px] w-[80%]"/>
+            {/* projects section */}
+            <div className="flex flex-row gap-[50px] justify-between p-[100px] pt-[200px] pb-[200px] w-[100%]">
+                <div>
+                    <h1 className="text-white">image here</h1>
+                </div>
+                <div className="flex flex-row gap-[80px]">
+                    <ProjectCard />
+                    <ProjectCard />
+                </div>
+            </div>
+
+            <hr className="bg-[#9C3EE4] h-[4px] w-[80%]"/>
+            {/* skills section */}
+            <div className="flex flex-row justify-between p-[150px] w-[100%] pt-[200px] pb-[200px]">
+                <div className="flex flex-row gap-[50px] justify-center max-w-[800px] flex-wrap ">
+                    <SkillCard />
+                    <SkillCard />
+                    <SkillCard />
+                    <SkillCard />
+                    <SkillCard />
+                </div>
+                <div>
+                    <h1 className="text-white">image here</h1>
+                </div>
+            </div>
+        </div>
     </>
   )
 }
