@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar.tsx";
 import ProjectCard from "./components/projectCard.tsx";
 import SkillCard from "./components/skillCard.tsx";
+import aboutCatSvg from "./assets/aboutcat.svg";
 
 function App() {
 
@@ -9,14 +10,14 @@ function App() {
         <Navbar />
         <div className="flex flex-col items-center">
             {/* about section */}
-            <div className="p-[200px] pb-[300px] pt-[300px] flex flex-row gap-[20px] justify-between w-[100%]">
-                <div className="max-w-[550px] min-w-0">
+            <div className="p-[150px] pb-[300px] pt-[300px] flex flex-row gap-[50px] justify-between w-[100%]">
+                <div className="max-w-[550px] min-w-0 mr-[50px]">
                     <h1 className="text-6xl font-bold mb-[20px] text-[#9C3EE4]">About</h1>
                     <p className="text-white text-3xl text-wrap break-all">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                     <button className="mt-[30px] p-[10px] bg-[#9C3EE4]">link</button>
                 </div>
-                <div className="p-[100px]">
-                    <h1 className="text-white">image here</h1>
+                <div className="p-[50px]">
+                    <img src={aboutCatSvg} alt="cat" />
                 </div>
             </div>
 
