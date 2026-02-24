@@ -2,6 +2,7 @@ import Navbar from "./components/navbar.tsx";
 import ProjectCard from "./components/projectCard.tsx";
 import SkillCard from "./components/skillCard.tsx";
 import aboutCatSvg from "./assets/aboutcat.svg";
+import projectCatSvg from "./assets/projectcat.svg";
 
 function App() {
 
@@ -24,8 +25,8 @@ function App() {
             <hr className="bg-[#9C3EE4] h-[4px] w-[80%]"/>
             {/* projects section */}
             <div className="flex flex-row gap-[50px] justify-between p-[100px] pt-[200px] pb-[200px] w-[100%]">
-                <div>
-                    <h1 className="text-white">image here</h1>
+                <div className="ml-[30px] mt-[20px]">
+                    <img src={projectCatSvg} alt="cat" />
                 </div>
                 <div className="flex flex-row gap-[80px]">
                     <ProjectCard />
