@@ -2,4 +2,32 @@
 
 #root {
     background-color: #151516;
+    font-family: "Inconsolata", monospace;
+}
+.project-card p {
+    color: white;
+}
+.skill-card p {
+    color: white;
+}
+p {
+    color: #989898;
+}
+b {
+    color: white;
+}
+
+.navbar a {
+    flex: 1;
+    display: block;
+    align-self: center;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 50px;
+    transition:background-color 0.2s ease;
+    color: white;
+    font-weight: bold;
+}
+.navbar a:hover {
+    background-color: #8137b9;
 }
