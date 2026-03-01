@@ -31,3 +31,12 @@ b {
 .navbar a:hover {
     background-color: #8137b9;
 }
+
+.project-card {
+    border: solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    border-color: #60258d;
+    box-shadow: 0 0 2px 2px #60258d inset;
+}
