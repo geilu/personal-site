@@ -4,6 +4,11 @@
     background-color: #151516;
     font-family: "Inconsolata", monospace;
 }
+
+#skill-card {
+    background-image: linear-gradient(to top left, #341c4a 50%, transparent 50%);
+}
+
 .project-card p {
     color: white;
 }

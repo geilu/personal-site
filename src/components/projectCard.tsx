@@ -8,9 +8,6 @@ interface Content {
 }
 
 export default function ProjectCard(props: Readonly<Content>) {
-    const handleClick = () => {
-        globalThis.location.href = props.repo;
-    }
 
     return (
         <div className="project-card flex flex-col justify-between bg-[#291838] w-[350px] h-[450px] p-[40px] rounded-2xl">
@@ -26,8 +23,8 @@ export default function ProjectCard(props: Readonly<Content>) {
 
                 <p className="text-[18px] mt-[10px] justify-left text-white">{props.desc}</p>
             </div>
-            <button className="bg-[#8137b9] rounded-[15px] w-[100px] h-[40px] font-bold text-white"
-                    onClick={handleClick}>repo</button>
+            <a className="bg-[#8137b9] rounded-[15px] w-[100px] h-[40px] font-bold text-white text-center content-center"
+                    href={props.repo}>repo</a>
         </div>
     )
 }

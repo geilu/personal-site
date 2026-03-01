@@ -15,7 +15,10 @@ function App() {
                     <div className="max-w-[550px] min-w-0 mr-[50px]">
                         <h1 className="text-6xl font-bold mb-[20px] text-[#9C3EE4]">About</h1>
                         <p className="text-white text-3xl text-wrap break-normal">Lorem ipsum <b>dolor sit</b> amet, consectetur adipiscing elit, <b>sed do</b> eiusmod tempor incididunt ut labore et <b>dolore magna</b> aliqua. Ut enim ad</p>
-                        <button className="mt-[30px] p-[10px] bg-[#9C3EE4]">link</button>
+
+                        <div className="mt-[32px]">
+                            <a className="p-[12px] pl-[16px] pr-[16px] bg-[#8137b9] rounded-[16px] font-bold text-white text-[18px]" href="https://github.com/geilu">my github</a>
+                        </div>
                     </div>
                     <div className="p-[50px] w-[100%] max-w-[630px]">
                         <img src={aboutCatSvg} alt="cat" />
@@ -46,11 +49,11 @@ function App() {
                 {/* skills section */}
                 <div id="skills-section" className="flex flex-row justify-center p-[150px] w-[100%] pt-[200px] pb-[200px] gap-[20px]">
                     <div className="flex flex-row gap-[50px] justify-center max-w-[800px] flex-wrap ">
-                        <SkillCard />
-                        <SkillCard />
-                        <SkillCard />
-                        <SkillCard />
-                        <SkillCard />
+                        <SkillCard text="React" logoPath="../src/assets/skill_icons/reacticon.svg"/>
+                        <SkillCard text="Java" logoPath="../src/assets/skill_icons/javaicon.svg" />
+                        <SkillCard text="skill3" logoPath=".." />
+                        <SkillCard text="skill4" logoPath=".." />
+                        <SkillCard text="skill5" logoPath=".." />
                     </div>
                     <div>
                         <img src={skillCatSvg} alt="cat" />
